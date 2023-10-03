@@ -76,12 +76,14 @@ namespace RemisYA
             this.fORM1ToolStripMenuItem.Name = "fORM1ToolStripMenuItem";
             this.fORM1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fORM1ToolStripMenuItem.Text = "FORM 1";
+            this.fORM1ToolStripMenuItem.Click += new System.EventHandler(this.fORM1ToolStripMenuItem_Click);
             // 
             // fORM2ToolStripMenuItem
             // 
             this.fORM2ToolStripMenuItem.Name = "fORM2ToolStripMenuItem";
             this.fORM2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fORM2ToolStripMenuItem.Text = "FORM 2";
+            this.fORM2ToolStripMenuItem.Click += new System.EventHandler(this.fORM2ToolStripMenuItem_Click);
             // 
             // fORM3ToolStripMenuItem
             // 
@@ -95,30 +97,35 @@ namespace RemisYA
             this.fORM4ToolStripMenuItem.Name = "fORM4ToolStripMenuItem";
             this.fORM4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fORM4ToolStripMenuItem.Text = "FORM 4";
+            this.fORM4ToolStripMenuItem.Click += new System.EventHandler(this.fORM4ToolStripMenuItem_Click);
             // 
             // fORM3ToolStripMenuItem1
             // 
             this.fORM3ToolStripMenuItem1.Name = "fORM3ToolStripMenuItem1";
             this.fORM3ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.fORM3ToolStripMenuItem1.Text = "FORM 5";
+            this.fORM3ToolStripMenuItem1.Click += new System.EventHandler(this.fORM3ToolStripMenuItem1_Click);
             // 
             // fORM3ToolStripMenuItem2
             // 
             this.fORM3ToolStripMenuItem2.Name = "fORM3ToolStripMenuItem2";
             this.fORM3ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.fORM3ToolStripMenuItem2.Text = "FORM 6";
+            this.fORM3ToolStripMenuItem2.Click += new System.EventHandler(this.fORM3ToolStripMenuItem2_Click);
             // 
             // fORM3ToolStripMenuItem3
             // 
             this.fORM3ToolStripMenuItem3.Name = "fORM3ToolStripMenuItem3";
             this.fORM3ToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.fORM3ToolStripMenuItem3.Text = "FORM 7";
+            this.fORM3ToolStripMenuItem3.Click += new System.EventHandler(this.fORM3ToolStripMenuItem3_Click);
             // 
             // fORM3ToolStripMenuItem4
             // 
             this.fORM3ToolStripMenuItem4.Name = "fORM3ToolStripMenuItem4";
             this.fORM3ToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.fORM3ToolStripMenuItem4.Text = "FORM 8";
+            this.fORM3ToolStripMenuItem4.Click += new System.EventHandler(this.fORM3ToolStripMenuItem4_Click);
             // 
             // fORM3ToolStripMenuItem5
             // 
@@ -132,6 +139,7 @@ namespace RemisYA
             this.fORM3ToolStripMenuItem6.Name = "fORM3ToolStripMenuItem6";
             this.fORM3ToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
             this.fORM3ToolStripMenuItem6.Text = "FORM 10";
+            this.fORM3ToolStripMenuItem6.Click += new System.EventHandler(this.fORM3ToolStripMenuItem6_Click);
             // 
             // PRINCIPAL
             // 
@@ -141,7 +149,8 @@ namespace RemisYA
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "PRINCIPAL";
-            this.Text = "PRINCIPAL";
+            this.Text = "HOME";
+            this.Load += new System.EventHandler(this.PRINCIPAL_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

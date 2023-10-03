@@ -19,7 +19,14 @@ namespace RemisYA
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Datos oChofer = new Datos();
+            oChofer.Buscar(textBox1);
+            
         }
     }
 }
