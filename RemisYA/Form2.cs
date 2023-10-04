@@ -16,13 +16,13 @@ namespace RemisYA
         public Form2()
         {
             InitializeComponent();
-            tabla = new DataTable();
+           
         }
 
         private void Form11_Load(object sender, EventArgs e)
         {
             ParteNombreForm2 oNombre = new ParteNombreForm2();
-            oNombre.GetData();
+            tabla= oNombre.GetData();
         }
 
         private void button1_Click(object sender, EventArgs e)

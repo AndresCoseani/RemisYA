@@ -86,7 +86,7 @@ namespace RemisYA
             this.nombre.Name = "nombre";
             this.nombre.Width = 200;
             // 
-            // Form11
+            // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,8 +95,8 @@ namespace RemisYA
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Name = "Form11";
-            this.Text = "Form11";
+            this.Name = "Form2";
+            this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form11_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

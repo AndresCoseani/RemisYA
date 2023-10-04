@@ -17,12 +17,20 @@ namespace RemisYA
         DataTable tabla;
 
         private int chofer;
+        
 
         public int Chofer
         {
             get { return chofer; }
             set { chofer = value; }
         }
+        private string nombre;
+        public string Nombre
+        {
+            get { return nombre; }
+            set { nombre = value; }
+        }
+
 
 
         public Datos()
@@ -43,25 +51,25 @@ namespace RemisYA
             tabla.PrimaryKey = vec;
         }
 
-        public void Buscar(TextBox textBox1)
+        public DataRow Buscar(int chofer)//preguntar porque se le pasa int chofer
         {
 
-            DataRow Chofer = tabla.Rows.Find(chofer);
-
-            if (Chofer != null)
-            {
-                string nombreChofer = Chofer["chofer"].ToString();
-
-                
-                textBox1.Text = nombreChofer;
-            }
+            DataRow fila = tabla.Rows.Find(chofer);
+            return fila;
 
         }
-        public DataTable Mostrar()
+        public void Modificar()//Graba pero no modifica
         {
-            return tabla;
-            
+            DataRow fila = tabla.NewRow();//crea la fila
+            fila["chofer"] = chofer;
+            fila["nombre"] = nombre;// se le asigna a la variable nombre y chofer lo que se ponga en nombre y chofer
+            tabla.Rows.Add(fila);//agrega una fila llamada fila a la tabla
+
+            OleDbCommandBuilder cb = new OleDbCommandBuilder(adaptador);//traduce
+            adaptador.Update(tabla);//actualiza la tabla
+
         }
+        
     
 
     }
