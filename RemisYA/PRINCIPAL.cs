@@ -81,5 +81,11 @@ namespace RemisYA
             Form10 f10 = new Form10();
             f10.ShowDialog();
         }
+
+        private void fORM11ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form11 f11 = new Form11();
+            f11.ShowDialog();
+        }
     }
 }

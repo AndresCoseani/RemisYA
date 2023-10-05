@@ -50,6 +50,7 @@ namespace RemisYA
             this.button1.TabIndex = 0;
             this.button1.Text = "Ver";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -134,6 +135,7 @@ namespace RemisYA
             this.Controls.Add(this.button1);
             this.Name = "Form4";
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

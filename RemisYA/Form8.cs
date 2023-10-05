@@ -12,40 +12,45 @@ namespace RemisYA
 {
     public partial class Form8 : Form
     {
-        ClaseBarrio oBarrios;
+        Barrios oBarrio;
         public Form8()
         {
             InitializeComponent();
-            ClaseBarrio oBarrios = new ClaseBarrio();
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                bool OK = oBarrios.grabar(Convert.ToInt32(textBox1.Text), textBox2.Text.ToUpper());
-                if (OK == false)
+                if (textBox1.Text == "" || textBox2.Text == "")
                 {
-                    MessageBox.Show("Numero ingresado ya existente");
-
+                    MessageBox.Show("COMPLETE LOS DATOS", "ERROR");
                 }
                 else
                 {
-                    textBox1.Text = "";
-                    textBox2.Text = "";
+                    bool ok = oBarrio.grabar(Convert.ToInt32(textBox1.Text), textBox2.Text.ToUpper());
+                    if (ok == false)
+                    {
+                        MessageBox.Show("EL NUMERO O EL NOMBRE DEL BARRIO ESTA REPETIDO", "ERROR");
+                    }
+                    else
+                    {
+                        textBox1.Text = "";
+                        textBox2.Text = "";
+                    }
                 }
             }
             catch (Exception ex)
             {
-
-                MessageBox.Show("Barrio debe ser numerico");
+                MessageBox.Show("BARRIO DEBE SER NUMERICO", "ERROR");
             }
-            
+
         }
 
         private void Form8_Load(object sender, EventArgs e)
         {
-            ClaseBarrio oBarrio = new ClaseBarrio();
+            Barrios oBarrio = new Barrios();
         }
     }
 }

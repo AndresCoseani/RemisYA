@@ -41,6 +41,7 @@ namespace RemisYA
             this.fORM3ToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.fORM3ToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.fORM3ToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fORM11ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +67,8 @@ namespace RemisYA
             this.fORM3ToolStripMenuItem3,
             this.fORM3ToolStripMenuItem4,
             this.fORM3ToolStripMenuItem5,
-            this.fORM3ToolStripMenuItem6});
+            this.fORM3ToolStripMenuItem6,
+            this.fORM11ToolStripMenuItem});
             this.tAREASToolStripMenuItem.Name = "tAREASToolStripMenuItem";
             this.tAREASToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.tAREASToolStripMenuItem.Text = "TAREAS";
@@ -141,6 +143,13 @@ namespace RemisYA
             this.fORM3ToolStripMenuItem6.Text = "FORM 10";
             this.fORM3ToolStripMenuItem6.Click += new System.EventHandler(this.fORM3ToolStripMenuItem6_Click);
             // 
+            // fORM11ToolStripMenuItem
+            // 
+            this.fORM11ToolStripMenuItem.Name = "fORM11ToolStripMenuItem";
+            this.fORM11ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fORM11ToolStripMenuItem.Text = "FORM 11";
+            this.fORM11ToolStripMenuItem.Click += new System.EventHandler(this.fORM11ToolStripMenuItem_Click);
+            // 
             // PRINCIPAL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,5 +181,6 @@ namespace RemisYA
         private System.Windows.Forms.ToolStripMenuItem fORM3ToolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem fORM3ToolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem fORM3ToolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem fORM11ToolStripMenuItem;
     }
 }

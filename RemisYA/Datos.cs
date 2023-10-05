@@ -54,8 +54,8 @@ namespace RemisYA
         public DataRow Buscar(int chofer)//preguntar porque se le pasa int chofer
         {
 
-            DataRow fila = tabla.Rows.Find(chofer);
-            return fila;
+            DataRow fila = tabla.Rows.Find(chofer);//busca por filas en la columna chofer
+            return fila;//devuelve la fila en donde esta el chofer buscado
 
         }
         public void Modificar()//Graba pero no modifica
@@ -70,6 +70,7 @@ namespace RemisYA
 
         }
         
+       
     
 
     }
