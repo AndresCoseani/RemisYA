@@ -76,6 +76,7 @@ namespace RemisYA
             this.button1.TabIndex = 4;
             this.button1.Text = "GRABAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form8
             // 
@@ -89,6 +90,7 @@ namespace RemisYA
             this.Controls.Add(this.label1);
             this.Name = "Form8";
             this.Text = "Form8";
+            this.Load += new System.EventHandler(this.Form8_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
